@@ -704,7 +704,7 @@ section {
   border-radius: 0.5em;
   transition: all ease-in-out 0.3s;
   background: rgb(255, 255, 255);
-  box-shadow: 0px 10px 10px 0px rgba(49, 53, 56, 0.116);
+  box-shadow: 0px 0px 10px 0px rgba(49, 53, 56, 0.116);
 }
 .services .icon-box .icon {
   margin: 0 auto;
@@ -998,7 +998,7 @@ section {
 # Footer
 --------------------------------------------------------------*/
 #footer {
-  background: #f7f8f9;
+  background: #f7f8fa;
   color: #45505b;
   font-size: 14px;
   text-align: center;
