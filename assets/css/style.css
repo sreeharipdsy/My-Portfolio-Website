@@ -280,7 +280,7 @@ h1, h2, h3, h4, h5, h6 {
   display: inline-block;
   color: #45505b;
   line-height: 1;
-  margin-right: 20px;
+  margin-inline: 0.25em;
   transition: 0.3s;
 }
 #hero .social-links a:hover {
