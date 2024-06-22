@@ -1,0 +1,203 @@
+@media (min-width: 993px) {
+    .fixed-top .container {
+        padding-block: 7px;
+    }
+}
+@media (max-width: 992px) {
+    .logo-one h1 {
+        display: flex;
+        padding-block: 0.5em !important;
+        margin-left: 5px !important;
+        color: white !important;
+    } 
+    .service-body .content .left .heading p {
+        font-size: 16px !important;
+        margin-right: 5px !important;
+        padding: 0px 7px 0 7px !important;
+    }
+    .service-body .content .left .heading h1 {
+        font-size: 24px !important;
+    }
+}
+.service-body .main-content {
+    margin-top: 3em;
+}
+.service-body .content .row {
+    margin-top: 1em;
+}
+.service-body .service-arrow img {
+    width: 35%;
+    height: 15em;
+    object-fit: cover;
+}
+@media (max-width: 992px) {
+    .service-body .service-arrow img {
+        width: 100%;
+        height: 8em;
+    }
+    .row .left {
+        background: whitesmoke;
+        padding-top: 2em;
+        width: 94%;
+        margin: auto;
+        margin-bottom: 10px;
+        border-radius: 10px;
+        border-block: 3px solid #000000;
+    }
+}
+.service-body .content .left img {
+    width: 100%;
+    padding: 2.5em;
+}
+.service-body .content .left .heading {
+    justify-content: center;
+}
+.service-body .content .left .heading p {
+    font-size: 18px;
+    margin-right: 10px;
+    margin-block: auto;
+    background: black;
+    color: white;
+    padding: 0px 8px 0 8px;
+    border-radius: 50%;
+}
+.service-body .content .left .heading h1 {
+    margin-bottom: 0;
+    font-size: 24px;
+}
+.service-body .accordion-item {
+    border: none;
+}
+.service-body .accordion-button:after {
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%23212529'%3e%3cpath fill-rule='evenodd' d='M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z'/%3e%3c/svg%3e") !important;
+}
+.service-body .accordion-button:not(.collapsed) {
+    color: #000000;
+    background: none;
+    border: none;
+    box-shadow: rgba(0, 0, 0, 0.125) 0px -1px 0px inset;
+}
+.service-body .content .right .content {
+    background-color: #ffffff;
+    border-radius: 10px;
+    padding-inline: 3em;
+}
+.service-body hr {
+    background: repeating-linear-gradient(90deg, #000, #000 6px, transparent 6px, transparent 12px);
+    margin-bottom: 2em;
+}
+@media (max-width: 992px) {
+    .service-body .main-content {
+        margin-top: 0;
+    }
+    .service-body .content .right .content {
+        padding-inline: 0.75em;
+    }
+    .service-body .content .left {
+        border: none;
+        background: none;
+    }
+    .service-body .content .left .heading {
+        justify-content: left;
+        margin-bottom: 1.5em;
+    }
+    .service-body .content .left img {
+        background: whitesmoke;
+        border-radius: 10px;
+        border-block: 2px solid;
+    }
+    .service-body .accordion.active {
+        margin-top: 0;
+        padding-inline: 1em;
+    }
+    .service-body .panel ul {
+        padding-inline: 0 !important;
+    }
+    .service-body .accordion {
+        padding-inline: 1em !important;
+    }
+    .service-body hr {
+        margin-top: 3em;
+        margin-bottom: 0;
+    }
+}
+.service-body .accordion {
+    border-radius: 10px;
+    background-color: #ffffff;
+    color: #000000;
+    cursor: pointer;
+    padding: 15px;
+    padding-inline: 2em;
+    padding-block: 10px;
+    margin-block: 5px;
+    width: 100%;
+    border: none;
+    text-align: left;
+    outline: none;
+    font-size: 15px;
+    transition: 0.4s;
+}
+.service-body .accordion.active {
+    color: white;
+    background: black;
+}
+.service-body .accordion button {
+    border: none;
+    background: #ffffff;
+    color: #000000;
+    transition: 0.4s;
+    text-align: left;
+    max-width: 90%;
+}
+.service-body .accordion.active button {
+    border: none;
+    background: #000000;
+    transition: 0.4s;
+    color: #ffffff;
+}
+.service-body .accordion:after {
+    content: '\002B';
+    color: #000000;
+    font-weight: bold;
+    float: right;
+    margin-left: 5px;
+} 
+.service-body .accordion.active:after {
+    content: none;
+    color: white;
+}
+.service-body .content .right .summary-title:after {
+    content: '\002B';
+    color: #000000;
+    font-weight: bold;
+    float: right;
+    margin-left: 5px;
+    transition: 0.4s;
+}
+.service-body .content .right .summary-title.open:after {
+    content: '\2212';
+}
+.service-body .panel {
+    padding: 0 18px;
+    background: whitesmoke;
+    border-radius: 10px;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.4s ease-in-out;
+}
+.service-body .accordion.active.panel {
+    max-height: 100%;
+}
+.service-body .panel ul {
+    margin-block: 1em;
+    padding-inline: 1em;
+    transition: max-height 0.4s ease-in-out;
+}
+.service-body .panel ul li {
+    list-style: none;
+    font-size: 14px;
+}
+.panel.show {
+    max-height: 300px;
+    transition: max-height 0.4s ease-in-out;
+}
