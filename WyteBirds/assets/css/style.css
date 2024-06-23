@@ -435,67 +435,6 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 /*--------------------------------------------------------------
-# mission Section
---------------------------------------------------------------*/
-.mission {
-  padding-top: 0em;
-  padding-bottom: 1em;
-}
-.mission .section-title p, .intro .conclusion p {
-  margin-top: 1em;
-  font-size: 21px;
-}
-
-@media (max-width: 992px) {
-  .mission {
-    padding-bottom: 60px;
-  }
-  .mission .section-title p, .intro .conclusion p {
-    margin-top: 1.25em;
-    font-size: 16px;
-  }
-  .intro .conclusion p {
-    margin-top: 2.5em;
-  }
-}
-
-/*--------------------------------------------------------------
-# intro Section
---------------------------------------------------------------*/
-.intro {
-  padding-top: 0;
-}
-.intro .intro-content h1 {
-  font-size: 24px;
-  background: black;
-  color: white;
-  padding: 8px 18px 8px 18px;
-  border-radius: 5px;
-}
-.intro .intro-content p {
-  font-size: 15px;
-  margin-bottom: 2em;
-  padding: 1em;
-  border-left: 2px solid;
-  border-bottom: 2px solid;
-  border-radius: 5px;
-}
-@media (max-width: 992px) {
-  .intro {
-    margin-top: -3em;
-    padding: 0;
-  }
-  .intro .intro-content h1 {
-    font-size: 26px;
-  }
-  .intro .intro-content p {
-    font-size: 15px;
-    margin-top: 1em;
-    margin-bottom: 0;
-  }
-}
-
-/*--------------------------------------------------------------
 # Hero Section
 --------------------------------------------------------------*/
 #hero {
@@ -515,6 +454,9 @@ h1, h2, h3, h4, h5, h6 {
   color: #000000;
   -webkit-animation: focus-in-expand 0.8s ease-in-out both;
 	animation: focus-in-expand 0.8s ease-in-out both;
+}
+#hero h1 a:hover {
+  color: #000000;
 }
 @-webkit-keyframes focus-in-expand {
   0% {
@@ -686,6 +628,71 @@ section {
 .section-title p {
   margin-bottom: 0;
 }
+
+
+
+/*--------------------------------------------------------------
+# mission Section
+--------------------------------------------------------------*/
+.mission {
+  padding-top: 0em;
+  padding-bottom: 1em;
+}
+.mission .section-title p, .intro .conclusion p {
+  margin-top: 1em;
+  font-size: 21px;
+}
+
+@media (max-width: 992px) {
+  .mission {
+    padding-bottom: 60px;
+  }
+  .mission .section-title p, .intro .conclusion p {
+    margin-top: 1.25em;
+    font-size: 16px;
+  }
+  .intro .conclusion p {
+    margin-top: 2.5em;
+  }
+}
+
+/*--------------------------------------------------------------
+# intro Section
+--------------------------------------------------------------*/
+.intro {
+  padding-top: 0;
+}
+.intro .intro-content h1 {
+  font-size: 24px;
+  background: black;
+  color: white;
+  padding: 8px 18px 8px 18px;
+  border-radius: 5px;
+}
+.intro .intro-content p {
+  font-size: 15px;
+  margin-bottom: 2em;
+  padding: 1em;
+  border-left: 2px solid;
+  border-bottom: 2px solid;
+  border-radius: 5px;
+}
+@media (max-width: 992px) {
+  .intro {
+    margin-top: -3em;
+    padding: 0;
+  }
+  .intro .intro-content h1 {
+    font-size: 26px;
+  }
+  .intro .intro-content p {
+    font-size: 15px;
+    margin-top: 1em;
+    margin-bottom: 0;
+  }
+}
+
+
 
 /*--------------------------------------------------------------
 # Clients
