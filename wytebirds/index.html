@@ -28,6 +28,7 @@
 
   <!-- Main CSS File -->
   <link href="assets/css/style.css" rel="stylesheet">
+  <link href="assets/css/swal-alert.css" rel="stylesheet">
 
 </head>
 
@@ -375,17 +376,19 @@
               data:$("#gform").serialize(),
               method:"post",
               success:function (response){
-                  alert("Your message has been sent. Thank you!")
-                  window.location.reload()
-                  //window.location.href="https://google.com"
-              },
-              error:function (err){
                 Swal.fire({
-                  icon: "error",
-                  title: "Oops...",
-                  text: "Something went wrong!"
-                });
-              }
+                title: "Thank you!",
+                text: "We will Catch you Soon..!",
+                icon: "success"
+              });
+            },
+              error:function (err){
+              Swal.fire({
+                icon: "error",
+                title: "Oops!",
+                text: "Something went wrong..!"
+              }); 
+            }
           })
       })
   </script>
