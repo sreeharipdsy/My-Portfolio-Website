@@ -1493,18 +1493,21 @@ section {
   margin-bottom: 20px;
 }
 .contact .php-email-form label {
-  padding-bottom: 8px;
+  padding-bottom: 4px;
+  font-size: 14px;
+  margin-left: 2px;
+  color: #00000092;
 }
-.contact .php-email-form input, .contact .php-email-form textarea {
+.contact .php-email-form input, .contact .php-email-form textarea, .contact .php-email-form select {
   border-radius: 5px;
   box-shadow: none;
   font-size: 15px;
   border: 2px solid #0000002d;
 }
-.contact .php-email-form input:focus, .contact .php-email-form textarea:focus {
+.contact .php-email-form input:focus, .contact .php-email-form textarea:focus, .contact .php-email-form select:focus {
   border-color: #000000;
 }
-.contact .php-email-form input {
+.contact .php-email-form input, .contact .php-email-form select {
   height: 40px;
 }
 .contact .php-email-form textarea {

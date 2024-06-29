@@ -341,23 +341,41 @@
           <div class="col-lg-7 mt-5 mt-lg-0 d-flex align-items-stretch">
             <form id="gform" action="" class="php-email-form">
               <div class="row">
-                <div class="form-group col-md-6">
-                  <input type="text" class="form-control" name="name" id="name" placeholder="Name" required>
+                <div class="form-group col-md-6" style="display: none;">
+                  <input value=" " type="text" class="form-control" name="WyteBirds - Contact Form" id="WyteBirds - Contact Form" required>
                 </div>
                 <div class="form-group col-md-6">
-                  <input type="text" class="form-control" name="mobile" id="subject" placeholder="Mobile" required>
+                  <label for="">Name</label>
+                  <input type="text" class="form-control" name="name" id="name" required>
                 </div>
-                <div class="form-group col-md-12">
-                  <input type="email" class="form-control" name="email" id="email" placeholder="Email" required>
+                <div class="form-group col-md-6">
+                  <label for="">Mobile</label>
+                  <input type="text" maxlength="10" autocomplete="off" class="form-control mob-input" name="mobile" id="mobile" required>
+                </div>
+                <div class="form-group col-md-6">
+                  <label for="">Email</label>
+                  <input type="email" class="form-control" name="email" id="email" required>
+                </div>
+                <div class="form-group col-md-6">
+                  <!-- <input type="" class="form-control" name="email" id="email" placeholder="Email" required> -->
+                  <label for="">Service you are looking for ?</label>
+                  <select type="number" class="form-control" name="services" id="services" required>
+                    <option></option>
+                    <option value="Responsive Web Design">Responsive Web Design</option>
+                    <option value="Personal Websites">Personal Websites</option>
+                    <option value="Portfolio Websites">Portfolio Websites</option>
+                    <option value="UI/UX Designing">UI/UX Designing</option>
+                    <option value="Business/Company Websites">Business/Company Websites</option>
+                    <option value="Website Hosting">Website Hosting</option>
+                    <option value="Website Maintenance">Website Maintenance</option>
+                    <option value="24/7 Technical Support">24/7 Technical Support</option>
+                    <option value="Others">Others</option>
+                  </select>
                 </div>
               </div>
               <div class="form-group col-md-12">
-                <input type="text" class="form-control" name="message" id="message" placeholder="Write something.." >
-              </div>
-              <div class="my-3">
-                <div class="loading">Loading</div>
-                <div class="error-message"></div>
-                <div class="sent-message">Your message has been sent. Thank you!</div>
+                <label for="">Brief your service requirement..</label>
+                <input type="text" class="form-control" name="message" id="message" required>
               </div>
               <div class="text-center"><button type="submit">Send Message</button></div>
             </form>
@@ -367,31 +385,6 @@
 
       </div>
     </section><!-- End Contact Section -->
-
-    <script>
-      $("#gform").submit((e)=>{
-          e.preventDefault()
-          $.ajax({
-              url:"https://script.google.com/macros/s/AKfycbzrZjTij4m9GUFiN8QBpngGfXho5I7SeVS0lrnYQyqvS6I6gcYZ0srJ3YJQeWxopbkU2A/exec",
-              data:$("#gform").serialize(),
-              method:"post",
-              success:function (response){
-                Swal.fire({
-                title: "Thank you!",
-                text: "We will Catch you Soon..!",
-                icon: "success"
-              });
-            },
-              error:function (err){
-              Swal.fire({
-                icon: "error",
-                title: "Oops!",
-                text: "Something went wrong..!"
-              }); 
-            }
-          })
-      })
-  </script>
 
   </main><!-- End #main -->
 
@@ -465,6 +458,7 @@
   <script src="assets/js/main.js"></script>
   <script src="assets/js/panel.js"></script>
   <script src="assets/js/modal.js"></script>
+  <script src="assets/js/contact-form.js"></script>
 
 </body>
 
