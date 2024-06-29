@@ -35,7 +35,7 @@
   <!-- Main CSS File -->
   <link href="assets/css/style.css" rel="stylesheet">
   <link href="assets/css/alert.css" rel="stylesheet">
-  <link href="wytebirds/assets/css/swal-alert.css" rel="stylesheet">
+  <link href="assets/css/sweet-alert.css" rel="stylesheet">
 
 </head>
 
@@ -226,12 +226,7 @@
                 <input type="tel" class="form-control" name="subject" id="subject" placeholder="Mobile" required>
               </div>
               <div class="form-group mt-3">
-                <textarea class="form-control" name="message" rows="5" placeholder="Message" required></textarea>
-              </div>
-              <div class="my-3">
-                <div class="loading">Loading</div>
-                <div class="error-message"></div>
-                <div class="sent-message">Your message has been sent. Thank you!</div>
+                <textarea class="form-control" name="message" rows="5" placeholder="Message"></textarea>
               </div>
               <div class="text-center"><button type="submit">Send Message</button></div>
             </form>
@@ -239,36 +234,6 @@
         </div>
       </div>
     </section><!-- End Contact Section -->
-
-    <script>
-      $("#submit-form").submit((e) => {
-        e.preventDefault()
-        $.ajax({
-          url: "https://script.google.com/macros/s/AKfycbxmDu-UtC-XKB7SLpetY4mSJ7CtflTlsrsM6jkfE_t7gKq5Ul03Aa0RPTqlLW292hmI/exec",
-          data: $("#submit-form").serialize(),
-          method: "post",
-          // success: function (response) {
-          //   alert("Form submitted successfully")
-          //   window.location.reload()
-          //   //window.location.href="https://google.com"
-          // },
-          success:function (response){
-            Swal.fire({
-              title: "Thank you!",
-              text: "Form Submitted Succesfully",
-              icon: "success"
-            });
-          },
-          error:function (err){
-            Swal.fire({
-              icon: "error",
-              title: "Oops...",
-              text: "Something went wrong!"
-            }); 
-          }
-        })
-      })
-    </script>
 
   </main><!-- End #main -->
 
@@ -309,7 +274,7 @@
 
   <!-- Main JS File -->
   <script src="assets/js/main.js"></script>
-
+  <script src="assets/js/contact-form.js"></script>
 
 </body>
 
