@@ -18,6 +18,7 @@ header {
     width: 100%;
     z-index: 999;
     padding-top: 0;
+    background-color: #fff;
 }
 header .navbar {
     padding-bottom: 0;
@@ -183,37 +184,37 @@ header .navbar button[aria-expanded="true"] .line:nth-child(3) {
 
 
 
-/* NAV Portfolio */
-.nav-portfolio {
-    padding-top: 12em;
-}
-.nav-portfolio .container {
-    display: flex;
-    justify-content: center;
-    margin-top: 1em;
-    gap: 2.5px;
-}
-.nav-portfolio .container div {
-    padding: 7.5px 15px;
-    background: whitesmoke;
-}
-.nav-portfolio .container div:hover {
-    cursor: pointer;
-}
-.nav-portfolio .container div:active, .nav-portfolio .container div:focus {
-    background: #000000;
-    color: #fff;
-}
-
-
-
 
 
 
 
 
 /* SECTION - ONE */
+.section-one {
+    padding-top: 12em;
+}
+#project-filters {
+    display: flex;
+    justify-content: center;
+    margin-top: 1em;
+    gap: 2.5px;
+}
+#project-filters div {
+    transition: 0.3s;
+    padding: 7.5px 15px;
+    background: whitesmoke;
+}
+#project-filters div:hover {
+    cursor: pointer;
+}
+#project-filters .filter-active {
+    background: #000000;
+    color: #fff;
+} 
 .section-one .project-description {
     text-align: justify;
     padding-inline: 1em;
+}
+.section-one .project-item {
+    margin-top: 2em;
 }
