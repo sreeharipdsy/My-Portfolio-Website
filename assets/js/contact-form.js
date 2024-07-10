@@ -25,7 +25,7 @@ $("#submit-form").submit((e) => {
 })
 });
 
-//mobile
+//mobile-number
 $(document).ready(function() {
     $(".mob-input").keydown(function (e) {
         // Allow: backspace, delete, tab, escape, enter and .
