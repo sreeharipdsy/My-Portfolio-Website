@@ -6,7 +6,7 @@
     <title>My Portfolio</title>
 
     <!-- Favicon -->
-    <link href="assets/images/logo/logo-in-header.png" rel="icon">
+    <link href="https://sreeharipdsy.in/wytebirds/assets/services/portfolio-website.svg" rel="icon">
 
     <!-- CSS -->
     <link href="assets/css/style.css" rel="stylesheet">
@@ -40,28 +40,65 @@
                     <h1>Portfolio.</h1>
                 </div>
               </a>
-              <button class="navbar-toggler menu-icon" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+              <button class="navbar-toggler menu-icon" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="true" aria-label="Toggle navigation">
                 <span class="line"></span>
                 <span class="line"></span>
                 <span class="line"></span>
+                <!-- <a onclick="window.open('assets/pdf/Resume_Sreehari_S.pdf'); return true;" target="_blank">My Resume</a> -->
               </button>
-              <div class="collapse navbar-collapse justify-content-end" id="navbarNavAltMarkup">
+              <div class="show navbar-collapse justify-content-end" id="navbarNavAltMarkup">
                 <div id="navbar" class="navbar-nav">
                   <ul>
-                    <!-- <li><a class="nav-link" href="https://sreeharipdsy.in">Personal Website</a></li>
-                    <li><a class="nav-link" href="https://sreeharipdsy.in/wytebirds">Freelance Venture</a></li> -->
-                    <li><a class="nav-link" href="">Personal Website</a></li>
-                    <li><a class="nav-link" href="">Freelance Venture</a></li>
+                    <li><a class="nav-link" onclick="openResume()"><img src="assets/img/clip.svg" style="transform: rotate(90deg);" alt="">My Resume</a></li>
+                    <!-- <li><a class="nav-link">WyteBirds</a></li>
+                    <li><a class="nav-link">SecuCenter</a></li>
+                    <li><a class="nav-link">DreamBakes</a></li>
+                    <li><a class="nav-link">PersonalWebsite</a></li> -->
                   </ul>
-                </div>
+                </div> 
               </div>
             </div>
         </nav>
     </header>
 
 
+    <!-- Portfolio Navigation -->
+    <div class="nav-portfolio">
+        <div class="container">
+            <div id="project1" class="active">1</div>
+            <div id="project2">2</div>
+            <div id="project3">3</div>
+            <div id="project4">4</div>
+            <div id="project5">5</div>
+        </div>
+    </div>
 
 
+    <!-- PORTFOLIO -->
+    <section class="section-one">
+        <div class="container" style="margin-top: 1.5em;">
+            <div id="project1" class="project-description">
+                <h1>1. Origami</h1>
+                <p><strong>Project Link:</strong> <a href="">Origami Project</a></p>
+                <p><strong>Tools Used:</strong> HTML5, CSS3, JavaScript, Bootstrap 5, jQuery, AJAX, AOS, Google Fonts, Google Sheets, FontAwesome</p>
+                <p><strong>Details:</strong>
+                    Origami is an online platform designed to offer high-quality psychology courses at affordable prices. It focuses on providing comprehensive educational content, including crash courses for various competitive exams such as CUET, JMI, NET, and others.
+                </p>
+                <p><strong>Key Features:</strong></p>
+                <ul>
+                    <li>User-friendly interface with modern design</li>
+                    <li>Responsive layout compatible with various devices</li>
+                    <li>Integration with Google Sheets for data management</li>
+                    <li>Rich multimedia content enhanced by animations and interactive elements</li>
+                </ul>
+                <p><strong>Development:</strong>
+                    The website was built using a combination of HTML5, CSS3, JavaScript, and Bootstrap 5, alongside jQuery, AJAX, and AOS for dynamic content and animations. Google Fonts and FontAwesome were utilized for typography and icons, respectively.
+                </p>
+            </div>
+        </div>
+    </section>
+
+       
 
     <!-- Script Files -->
 
@@ -71,6 +108,9 @@
     <!-- Animation On Scroll - AOS -->
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script src="assets/js/aos.js"></script>
+
+    <!-- Open Resume -->
+    <script src="assets/js/open-resume.js"></script>
 
     <!-- Font-Awesome -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/js/all.js" integrity="sha512-MXWlk6UOVfE/OdjLyby2zlldm3K36O43PyJmAmXfib7wWEUkediNdwRx4rrvM1GtP1yO+sDLCkvXV6o03sQHmA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
