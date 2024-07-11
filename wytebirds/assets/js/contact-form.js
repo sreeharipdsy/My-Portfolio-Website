@@ -2,7 +2,7 @@
 $("#gform").submit((e)=>{
     e.preventDefault()
     $.ajax({
-        url:"https://script.google.com/macros/s/AKfycbz-3y5gWF4PWFpm7gMQk8zVrNplHp2Bm7Q1B-Lc5C34AN_llijJWR0-qsKF5PsmpSHI/exec",
+        url:"https://script.google.com/macros/s/AKfycbxJa8ZWcHm6Z9kjLOpLOYzHkFpLwjF6OvXdkJGjwT9oP72ezPJoJTiH0haSYWU02zbK/exec",
         data:$("#gform").serialize(),
         method:"post",
         success:function (response) {

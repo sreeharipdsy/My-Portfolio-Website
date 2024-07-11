@@ -3,7 +3,7 @@
 $("#submit-form").submit((e) => {
   e.preventDefault()
   $.ajax({
-  url: "https://script.google.com/macros/s/AKfycbxmDu-UtC-XKB7SLpetY4mSJ7CtflTlsrsM6jkfE_t7gKq5Ul03Aa0RPTqlLW292hmI/exec",
+  url: "https://script.google.com/macros/s/AKfycbwXsPeGvp49Z10Z8dWZ1DUOeSkWXeJ227qsFzLK27RHgyok4ijFSpKmmYFp2MFfpwUVyQ/exec",
   data: $("#submit-form").serialize(),
   method: "post",
   success:function (response) {
