@@ -196,6 +196,7 @@ header .navbar button[aria-expanded="true"] .line:nth-child(3) {
 .section-one {
     padding-top: 12em;
 }
+
 #project-filters {
     display: flex;
     justify-content: center;
