@@ -1,6 +1,9 @@
 /* body h1, h2, h3, h4, h5, h6, p, a, ul li {
     font-family: "Roboto Mono", monospace;
 } */
+body h1, h2, h3, h4, h5, h6, p, a, ul li {
+    color: #000;
+}
 img {
     -drag: none;
     user-select: none;
@@ -217,5 +220,5 @@ header .navbar button[aria-expanded="true"] .line:nth-child(3) {
 }
 .section-one .project-item {
     margin-top: 2em;
-    left: 0 !important;
+    margin-right: 12px;
 }
