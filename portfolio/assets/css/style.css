@@ -217,4 +217,5 @@ header .navbar button[aria-expanded="true"] .line:nth-child(3) {
 }
 .section-one .project-item {
     margin-top: 2em;
+    left: 0 !important;
 }
