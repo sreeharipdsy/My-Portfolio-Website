@@ -93,7 +93,38 @@
                 </p>
                 <div class="buttons">
                     <button onclick="projectOrigami()">View Project</button>
-                    <a href="">View Gallery</a>
+                    <a href="#" id="open-modal-link">View Gallery</a>
+                </div>
+                <!-- Main Modal -->
+                <div id="image-modal" class="modal">
+                    <div class="modal-content">
+                        <span class="close" id="closeMainModal">&times;</span>
+                        <div class="image-gallery">
+                            <img src="assets/origami/img-1.png" alt="Image" class="gallery-image">
+                            <img src="assets/origami/img-2.png" alt="Image" class="gallery-image">
+                            <img src="assets/origami/img-3.png" alt="Image" class="gallery-image">
+                            <img src="assets/origami/img-4.png" alt="Image" class="gallery-image">
+                            <img src="assets/origami/img-5.png" alt="Image" class="gallery-image">
+                            <img src="assets/origami/img-6.png" alt="Image" class="gallery-image">
+                            <img src="assets/origami/img-7.png" alt="Image" class="gallery-image">
+                            <img src="assets/origami/img-8.png" alt="Image" class="gallery-image">
+                            <img src="assets/origami/img-9.png" alt="Image" class="gallery-image">
+                            <img src="assets/origami/img-10.png" alt="Image" class="gallery-image">
+                            <img src="assets/origami/img-11.png" alt="Image" class="gallery-image">
+                            <img src="assets/origami/img-12.png" alt="Image" class="gallery-image">
+                            <img src="assets/origami/img-13.png" alt="Image" class="gallery-image">
+                            <img src="assets/origami/img-14.png" alt="Image" class="gallery-image">
+                            <img src="assets/origami/img-15.png" alt="Image" class="gallery-image">
+                            <img src="assets/origami/img-16.png" alt="Image" class="gallery-image">
+                        </div>
+                    </div>
+                </div>
+                <!-- Image View Modal -->
+                <div id="full-view-modal" class="modal">
+                    <div class="modal-content">
+                        <span class="close">&times;</span>
+                        <img id="full-view-image" src="" alt="Full View">
+                    </div>
                 </div>
             </div>
             <div class="project-item filter-2 project-description">
@@ -206,6 +237,9 @@
 
     <!-- Project Filter -->
     <script src="assets/js/project-filter.js"></script>
+
+    <!-- Modal Image -->
+    <script src="assets/js/modal.js"></script>
 
     <!-- Font-Awesome -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/js/all.js" integrity="sha512-MXWlk6UOVfE/OdjLyby2zlldm3K36O43PyJmAmXfib7wWEUkediNdwRx4rrvM1GtP1yO+sDLCkvXV6o03sQHmA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
