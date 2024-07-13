@@ -258,5 +258,6 @@ header .navbar button[aria-expanded="true"] .line:nth-child(3) {
     text-align: center;
 }
 .project-item .buttons a:hover {
+    background-color: #dfdfdf51;
     box-shadow: 4px 4px 0px rgba(0, 0, 0, 0.9);
 }
