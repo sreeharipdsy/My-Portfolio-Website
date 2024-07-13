@@ -63,7 +63,7 @@ header .navbar-nav {
     justify-content: center;
     flex-direction: row;
     background: #ffffff;
-    padding: 1em;
+    padding: 10px;
 }
 header .navbar-nav ul {
     display: flex;
@@ -194,7 +194,7 @@ header .navbar button[aria-expanded="true"] .line:nth-child(3) {
 
 /* SECTION - ONE */
 .section-one {
-    padding-top: 12em;
+    padding-top: 10em;
 }
 .project-container {
     margin-top: 0 !important;
