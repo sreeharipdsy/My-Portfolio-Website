@@ -60,7 +60,7 @@ header .navbar-toggler:focus {
 header .navbar-nav {
     text-align: center;
     display: flex;
-    justify-content: end;
+    justify-content: center;
     flex-direction: row;
     background: #ffffff;
     padding: 1em;
