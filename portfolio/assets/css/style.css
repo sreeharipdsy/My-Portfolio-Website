@@ -227,8 +227,14 @@ header .navbar button[aria-expanded="true"] .line:nth-child(3) {
     margin-bottom: 2em;
     padding: 0.45em;
 }
+.project-item .buttons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1em;
+    margin-top: 2em;
+}
 .project-item button {
-    margin-top: 10px;
     padding: 5px 15px;
     background: #000;
     color: white;
@@ -239,4 +245,18 @@ header .navbar button[aria-expanded="true"] .line:nth-child(3) {
 .project-item button:hover {
     color: #000;
     background-color: #dfdfdf51;
+    box-shadow: 4px 4px 0px rgba(0, 0, 0, 0.9);
+}
+.project-item .buttons a {
+    text-decoration: none;
+    padding: 5px 15px;
+    background: #fff;
+    color: black;
+    transition: 0.2s;
+    width: 100%;
+    border: 2px solid #000;
+    text-align: center;
+}
+.project-item .buttons a:hover {
+    box-shadow: 4px 4px 0px rgba(0, 0, 0, 0.9);
 }
