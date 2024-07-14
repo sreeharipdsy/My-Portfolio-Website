@@ -287,10 +287,9 @@ header .navbar button[aria-expanded="true"] .line:nth-child(3) {
     animation: slideIn 0.4s;
 }
 .close {
-    color: #000000;
+    color: #505050;
     float: right;
     font-size: 24px;
-    font-weight: bold;
     cursor: pointer;
     margin-left: auto;
     margin-top: -12px;
