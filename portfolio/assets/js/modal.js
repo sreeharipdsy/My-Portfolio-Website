@@ -1,35 +1,43 @@
-document.addEventListener("DOMContentLoaded", function() {
-    const openModalLink = document.getElementById('open-modal-link');
-    const imageModal = document.getElementById('image-modal');
-    const fullViewModal = document.getElementById('full-view-modal');
-    const fullViewImage = document.getElementById('full-view-image');
-    const closeButtons = document.querySelectorAll('.close');
-    const galleryImages = document.querySelectorAll('.gallery-img');
+document.addEventListener('DOMContentLoaded', function () {
+    const modalTriggers = document.querySelectorAll('.modal-trigger');
+    const modals = document.querySelectorAll('.modal');
+    const fullImageModal = document.getElementById('fullImageModal');
+    const fullImage = document.getElementById('fullImage');
+    const closes = document.querySelectorAll('.close');
 
-    openModalLink.addEventListener('click', function(event) {
-        event.preventDefault();
-        imageModal.style.display = 'block';
-    });
-
-    closeButtons.forEach(button => {
-        button.addEventListener('click', function() {
-            button.closest('.modal').style.display = 'none';
+    modalTriggers.forEach(trigger => {
+        trigger.addEventListener('click', function (event) {
+            event.preventDefault();
+            const modalId = this.getAttribute('data-modal');
+            document.getElementById(modalId).style.display = 'block';
         });
     });
 
-    window.addEventListener('click', function(event) {
-        if (event.target === imageModal) {
-            imageModal.style.display = 'none';
-        }
-        if (event.target === fullViewModal) {
-            fullViewModal.style.display = 'none';
-        }
+    modals.forEach(modal => {
+        modal.addEventListener('click', function (event) {
+            if (event.target === this) {
+                this.style.display = 'none';
+            }
+        });
+
+        const images = modal.querySelectorAll('.modal-image');
+        images.forEach(image => {
+            image.addEventListener('click', function () {
+                fullImage.src = this.src;
+                fullImageModal.style.display = 'block';
+            });
+        });
     });
 
-    galleryImages.forEach(image => {
-        image.addEventListener('click', function() {
-            fullViewImage.src = image.src;
-            fullViewModal.style.display = 'block';
+    closes.forEach(close => {
+        close.addEventListener('click', function () {
+            this.parentElement.parentElement.style.display = 'none';
         });
+    });
+
+    fullImageModal.addEventListener('click', function (event) {
+        if (event.target === this || event.target === fullImage) {
+            this.style.display = 'none';
+        }
     });
 });
