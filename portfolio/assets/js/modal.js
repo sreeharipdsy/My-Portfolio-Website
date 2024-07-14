@@ -10,6 +10,7 @@ document.addEventListener('DOMContentLoaded', function () {
             event.preventDefault();
             const modalId = this.getAttribute('data-modal');
             document.getElementById(modalId).style.display = 'block';
+            
         });
     });
 
