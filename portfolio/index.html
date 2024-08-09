@@ -103,12 +103,18 @@
                 </p>
                 <div class="buttons">
                     <button onclick="projectWhitewalk()">View Project</button>
-                    <a href="#" class="modal-trigger" data-modal="modal1">View Gallery</a>
+                    <a href="#" class="modal-trigger" data-modal="modal1" aria-disabled="true">View Gallery</a>
                 </div>
                 <div id="modal1" class="modal">
                     <div class="modal-content">
                         <span class="close">&times;</span>
-                        <div class="images">
+                        <a onclick="projectWhitewalk()" 
+                           style=  "text-decoration: underline;
+                                    color: blue;
+                                    text-align: center;
+                                    cursor: pointer;"   
+                        >Checkout the Project</a>
+                        <!-- <div class="images">
                             <img src="" alt="Image" class="gallery-image">
                             <img src="" alt="Image" class="gallery-image">
                             <img src="" alt="Image" class="gallery-image">
@@ -125,7 +131,7 @@
                             <img src="" alt="Image" class="gallery-image">
                             <img src="" alt="Image" class="gallery-image">
                             <img src="" alt="Image" class="gallery-image">
-                        </div>
+                        </div> -->
                     </div>
                 </div>
             </div>
