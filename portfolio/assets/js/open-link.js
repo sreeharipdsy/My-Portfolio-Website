@@ -3,6 +3,11 @@ function openResume() {
     return true;    
 }
 
+function projectWhitewalk() {
+    window.location.href="https://whitewalk.in";
+    return true;
+}
+
 function projectOrigami() {
     window.location.href="https://sreeharipdsy.github.io/origami";
     return true;
